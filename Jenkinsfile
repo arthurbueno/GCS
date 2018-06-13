@@ -6,15 +6,11 @@ pipeline {
                 echo 'Passo de build!' 
             }
         }
-    }
-    stages {
         stage('Teste') {
             steps {
                 echo 'Passo de teste automatizado!' 
             }
         }
-    }
-    stages {
         stage('Deploy') {
             steps {
                 echo 'Passo de deploy!' 
