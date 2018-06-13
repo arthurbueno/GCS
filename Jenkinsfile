@@ -1,9 +1,23 @@
 pipeline {
     agent any 
     stages {
-        stage('Arthur é o melhor') {
+        stage('Build') {
             steps {
-                echo 'É VERDADE!' 
+                echo 'Passo de build!' 
+            }
+        }
+    }
+    stages {
+        stage('Teste') {
+            steps {
+                echo 'Passo de teste automatizado!' 
+            }
+        }
+    }
+    stages {
+        stage('Deploy') {
+            steps {
+                echo 'Passo de deploy!' 
             }
         }
     }
